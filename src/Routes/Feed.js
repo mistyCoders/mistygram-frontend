@@ -46,6 +46,7 @@ const Wrapper = styled.div`
 
 export default () => {
     const { data, loading } = useQuery(FEED_QUERY);
+    
     return (
         <Wrapper>
             <Helmet><title>Feed | Mistygram</title></Helmet>

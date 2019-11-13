@@ -68,8 +68,8 @@ export default withRouter(({ history }) => {
 
     const search = useInput("");
     const { data, loading } = useQuery(ME);
-    if(loading) return "";
-    const{ me } = data;
+    if (loading) return "";
+    const { me } = data;
     const onSearchSubmit = (e) => {
         e.preventDefault();
         history.push(`/search?term=${search.value}`);
@@ -86,7 +86,7 @@ export default withRouter(({ history }) => {
                     <form onSubmit={onSearchSubmit}>
                         <SearchInput value={search.value} onChange={search.onChange} placeholder="Search" />
                     </form>
-                    
+
                 </HeaderColumn>
                 <HeaderColumn>
                     <HeaderLink to="/explore">
@@ -95,14 +95,14 @@ export default withRouter(({ history }) => {
                     <HeaderLink to="/notifications">
                         <HeartEmpty />
                     </HeaderLink>
-                    {!me ?                     
-                    (<HeaderLink to="/#">
-                        <User />
-                    </HeaderLink>
-                    ) : (<HeaderLink to={me.userName}>
-                        <User />
-                    </HeaderLink>)}
-                    
+                    {!me ?
+                        (<HeaderLink to="/#">
+                            <User />
+                        </HeaderLink>
+                        ) : (<HeaderLink to={me.userName}>
+                            <User />
+                        </HeaderLink>)}
+
                 </HeaderColumn>
             </HeaderWrapper>
         </Header>

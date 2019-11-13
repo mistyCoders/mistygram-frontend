@@ -36,16 +36,17 @@ const PostContainer = ({
     
     useEffect(() => {
         const totalFiles = files.length;
+        let timer = null;
         if (currentItem === totalFiles - 1) {
-                setTimeout(() => setCurrentItem(0), 3000);
+                timer = setTimeout(() => setCurrentItem(0), 3000);
             } else {
-                setTimeout(() => setCurrentItem(currentItem + 1), 3000);
+                timer = setTimeout(() => setCurrentItem(currentItem + 1), 3000);
         }
+        return () => {
+            clearTimeout(timer);
+        };
     }, [currentItem, files]);
 
-
-    
-    
 
     const toggleLike = () => {
         toggleLikeMutation();
