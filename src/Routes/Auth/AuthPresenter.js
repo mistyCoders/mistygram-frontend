@@ -63,7 +63,7 @@ export default ({
                 {action === "logIn" && (
                     <>
                         <Helmet>
-                            <title>Log In | Mistygram</title>
+                            <title>Log In | Hinstagram</title>
                         </Helmet>
                         <form onSubmit={onSubmit}>
                             <Input placeholder={"Email"} {...email} type="email" />
@@ -74,7 +74,7 @@ export default ({
                 {action === "signUp" && (
                     <>
                         <Helmet>
-                            <title>Sign Up | Mistygram</title>
+                            <title>Sign Up | Hinstagram</title>
                         </Helmet>
                         <form onSubmit={onSubmit}>
                             <Input placeholder={"First name"} {...firstName} />
@@ -88,7 +88,7 @@ export default ({
                 {action === "confirm" && (
                     <>
                         <Helmet>
-                            <title>Confirm Secret | Mistygram</title>
+                            <title>Confirm Secret | Hinstagram</title>
                         </Helmet>
                         <form onSubmit={onSubmit}>
                             <Input placeholder={"Paste your secret"} required {...secret} />

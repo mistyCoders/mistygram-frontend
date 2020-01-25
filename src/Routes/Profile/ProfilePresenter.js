@@ -88,7 +88,7 @@ export default ({ loading, logOut, data }) => {
             <Wrapper>
                 <Helmet>
                     <title>
-                        {userName} | mistygram
+                        {userName} | hinstagram
                     </title>
                 </Helmet>
                 <Header>

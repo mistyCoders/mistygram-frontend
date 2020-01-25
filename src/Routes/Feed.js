@@ -49,7 +49,7 @@ export default () => {
     
     return (
         <Wrapper>
-            <Helmet><title>Feed | Mistygram</title></Helmet>
+            <Helmet><title>Feed | Hinstagram</title></Helmet>
             {loading && <Loader />}
             {!loading && data && data.seeFeed && data.seeFeed.map(post => (
                 <Post
