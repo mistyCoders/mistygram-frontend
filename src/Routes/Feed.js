@@ -49,7 +49,7 @@ export default () => {
     
     return (
         <Wrapper>
-            <Helmet><title>Feed | Hinstagram</title></Helmet>
+            <Helmet><title>Feed | PIE-instagram</title></Helmet>
             {loading && <Loader />}
             {!loading && data && data.seeFeed && data.seeFeed.map(post => (
                 <Post

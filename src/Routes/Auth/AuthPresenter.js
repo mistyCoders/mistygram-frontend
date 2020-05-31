@@ -63,7 +63,7 @@ export default ({
                 {action === "logIn" && (
                     <>
                         <Helmet>
-                            <title>Log In | Hinstagram</title>
+                            <title>Log In | PIE-instagram</title>
                         </Helmet>
                         <form onSubmit={onSubmit}>
                             <Input placeholder={"Email"} {...email} type="email" />
@@ -74,7 +74,7 @@ export default ({
                 {action === "signUp" && (
                     <>
                         <Helmet>
-                            <title>Sign Up | Hinstagram</title>
+                            <title>Sign Up | PIE-instagram</title>
                         </Helmet>
                         <form onSubmit={onSubmit}>
                             <Input placeholder={"First name"} {...firstName} />
@@ -88,7 +88,7 @@ export default ({
                 {action === "confirm" && (
                     <>
                         <Helmet>
-                            <title>Confirm Secret | Hinstagram</title>
+                            <title>Confirm Secret | PIE-instagram</title>
                         </Helmet>
                         <form onSubmit={onSubmit}>
                             <Input placeholder={"Paste your secret"} required {...secret} />

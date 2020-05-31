@@ -88,7 +88,7 @@ export default ({ loading, logOut, data }) => {
             <Wrapper>
                 <Helmet>
                     <title>
-                        {userName} | hinstagram
+                        {userName} | PIE-instagram
                     </title>
                 </Helmet>
                 <Header>
